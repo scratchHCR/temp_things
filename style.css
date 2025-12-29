@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#bgCanvas {
+    z-index: 2;
+}
+
+#fireworkCanvas {
+    z-index: 3;
+}
+
+#countdown {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 添加倒计时标签的样式 */
+#countdown-label {
+    font-family: "SimSun", serif;
+    font-size: 2em;
+    color: #FFD700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#timer {
+    font-family: "SimSun", serif;
+    font-size: 4em;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+#blessing {
+    font-size: 1.5em;
+    line-height: 1.8;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    opacity: 0.9;
+    margin-bottom: -20px;
+}
+
+#border-decoration {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    z-index: 5;
+    padding: 20px;
+}
+
+#background-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://vip.123pan.cn/1831551876/yk6baz03t0m000d7w33gvu4j9kc83gq6DIYwDIJyDIY0ApxwDIazBF==.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
